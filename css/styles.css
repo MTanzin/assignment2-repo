@@ -5,10 +5,107 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 10px;
+    margin: 20px 30px 0 30px;
+}
+.menu-container{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.top-menu-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px;
+}
+.top-menu-nav a{
+    text-decoration: none;
 }
 
-nav{
+button a{
+    color: white;
+}
+button{
+    background-color: steelblue;
+    margin: 10px 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.intro-container{
+    /* border: 2px dashed cyan; */
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+.text-style-part{
+    /* border: 2px solid mediumaquamarine; */
+    height: 100%;
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.intro-img img{
+    /* border:2px solid mediumaquamarine; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#intro-img{
+    flex-grow: 2;
+}
+
+/* -------------------------*\
+    Ecommerce Container
+/* --------------------------*/
+.ecommerce{
+    display: flex;
+    border: 2px solid grey;
+    background-color: honeydew;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.ecommerce img{
+    padding: 5px;
+    height: 25px;
+}
+.popular{
+    border: 2px solid cyan;
+    text-align: center;
+}
+.popular>h2{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.popular-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.popular-cell{
+    display: grid;
+    
+}
+.popular-cell h2{
+    text-align: left;
+    font-weight: 400;
+}
+
+
+/* nav{
     display: flex;
     color: black;
     justify-content: space-between;
@@ -25,7 +122,7 @@ a{
 }
 .top-menu-nav{
     display: flex;
-    /* text-decoration: none; */
+    /* text-decoration: none; *//*
 }
 .top-menu-nav li{
     list-style: none;
@@ -35,14 +132,13 @@ button>a{
     color: white;
 }
 
-/*..............................
-*/
+..............................
+
 
 .top-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    /* border: 2px solid black; */
     justify-content: space-between;
 }
 .intro-text{
@@ -70,7 +166,7 @@ button{
     align-items: flex-end;
 }
 
-/* ------------------------------*/
+------------------------------
 
 .ecommerce{
     display: flex;
@@ -85,9 +181,9 @@ button{
 
 
 
-/*-------------------
+-------------------
     footer
--------------------*/
+-------------------
 footer{
     color: white;
     background-color: rgb(62, 97, 163);
@@ -101,4 +197,4 @@ footer>h3{
 }
 footer p{
     text-align: center;
-}
+}*/ 
