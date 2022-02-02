@@ -144,7 +144,7 @@ button{
     color: orange;
 }
 .popular-cell:hover img{
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(1.2);
     transition: transform .75s;
 }
 .see-more{
@@ -159,7 +159,7 @@ button{
 /*------ Vintage Camera Section -------*/
 
 .vintage-cameras{
-    border: 2px dashed cyan;
+    /* border: 2px dashed cyan; */
     display: flex;
     /* min-height: 250px;
     min-width: 180px; */
