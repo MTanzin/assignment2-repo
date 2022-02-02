@@ -93,7 +93,7 @@ button{
 }
 .ecommerce img{
     padding: 5px;
-    min-height: 25px;
+    /* min-height: 25px; */
 }
 /*--------------------------*\
 -------Popular Container------
@@ -143,7 +143,10 @@ button{
 .popular-cell small{
     color: orange;
 }
-
+.popular-cell:hover img{
+    transform: rotate(15deg);
+    transition: transform .75s;
+}
 .see-more{
     text-align: right;
     margin-right: 100px;
@@ -156,10 +159,10 @@ button{
 /*------ Vintage Camera Section -------*/
 
 .vintage-cameras{
-    /* border: 2px dashed cyan; */
+    border: 2px dashed cyan;
     display: flex;
-    min-height: 150px;
-    min-width: 180px;
+    /* min-height: 250px;
+    min-width: 180px; */
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -174,7 +177,10 @@ button{
     order: 1;
     flex-grow: 2;
 }
-
+.img-box img{
+    min-height: 200px;
+    min-width: 200px;
+}
 /*-----Footer Section-------*/
 
 footer{
@@ -190,12 +196,10 @@ footer{
 }
 footer p{
     text-align: center;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
 }
 
 /*====================================*/
             Media Query
 /*====================================*\
 /* ````````Mobile```````````*/
-@media (max-width: 767px) {
-    
-}
