@@ -5,26 +5,22 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 20px 30px 0 30px;
+    margin: 20px 20px 0 30px;
     background-color: rgb(242, 248, 248);
 }
 h1{
-    font-weight: 700;
+    font-size: clamp(2rem, 1rem + 3vw, 6rem);
 }
 h2{
-    font-weight: 600;
     text-align: center;
-    
 }
-h3{
-    font-weight: 500;
-}
+
 h4{
     font-weight: 400;
 }
 .menu-container{
     display: flex;
-    height: 60px;
+    min-height: 60px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
@@ -53,14 +49,14 @@ button{
 .intro-container{
     /* border: 2px dashed cyan; */
     display: flex;
-    height: 300px;
+    min-height: 300px;
     justify-content: center;
     align-items: stretch;
     margin-bottom: 20px;
 }
 .text-style-part{
     /* border: 2px solid mediumaquamarine; */
-    height: 100%;
+    min-height: 300px;
     padding-left: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -70,8 +66,8 @@ button{
 }
 .img-box img{
     /* border:2px solid mediumaquamarine; */
-    height: 220px;
-    width: 250px;
+    min-height: 220px;
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -97,7 +93,7 @@ button{
 }
 .ecommerce img{
     padding: 5px;
-    height: 25px;
+    min-height: 25px;
 }
 /*--------------------------*\
 -------Popular Container------
@@ -116,7 +112,6 @@ button{
     grid-gap: auto;
     border-radius: 15px;
     border-bottom: 20px;
-    
     justify-content: center;
     align-items: center;
 
@@ -127,8 +122,8 @@ button{
     background-color: white;
     /* text-align: center; */
     /* padding: 20px; */
-    width: 251px;
-    height: 350px;
+    min-width: 251px;
+    min-height: 350px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -139,8 +134,8 @@ button{
     
 }
 .popular-cell img{
-    height: 200px;
-    width: 250px;
+    min-height: 200px;
+    min-width: 250px;
 }
 .popular-cell p{
     font-size: 12px;
@@ -150,7 +145,8 @@ button{
 }
 
 .see-more{
-    text-align: end;
+    text-align: right;
+    margin-right: 100px;
 }
 .see-more a{
     text-decoration: none;
@@ -162,7 +158,8 @@ button{
 .vintage-cameras{
     /* border: 2px dashed cyan; */
     display: flex;
-    height: 300px;
+    min-height: 150px;
+    min-width: 180px;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -182,16 +179,23 @@ button{
 
 footer{
     color: white;
-    /* width: 100%; */
+    width: auto;
     background-color: rgb(62, 97, 163);
     padding: 10px 0;
     margin-top: 10px;
     border-top: 0;
 }
-footer>h3{
-    font-weight: 500;
-    text-align: center;
+.text-bolder{
+    font-size: clamp(1.5rem, 2vw, 3rem);
 }
 footer p{
     text-align: center;
+}
+
+/*====================================*/
+            Media Query
+/*====================================*\
+/* ````````Mobile```````````*/
+@media (max-width: 767px) {
+    
 }
